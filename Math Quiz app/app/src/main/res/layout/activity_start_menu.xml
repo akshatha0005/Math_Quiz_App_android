@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.akshatha.math_quiz_app.StartMenu"
+    android:background="@drawable/start_screen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select Operation"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Addition (+)"
+        android:id="@+id/add"
+        android:textStyle="bold"
+        android:background="#7bfbec"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtraction (-)"
+        android:id="@+id/sub"
+        android:textStyle="bold"
+        android:background="#7bfbec"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/add"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Production (X)"
+        android:id="@+id/mul"
+        android:textStyle="bold"
+        android:background="#7bfbec"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/sub"
+        android:layout_alignRight="@+id/sub"
+        android:layout_alignEnd="@+id/sub" />
+
+</RelativeLayout>
